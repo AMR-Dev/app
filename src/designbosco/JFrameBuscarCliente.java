@@ -127,7 +127,7 @@ public class JFrameBuscarCliente extends javax.swing.JFrame {
 
     public void actualizarListaClientes() {
         DefaultListModel lista = new DefaultListModel();
-        ArrayList<Integer> listaIndex = sistema.buscarCliente(nombreCliente.getText(), apellidoCliente.getText(), ciCliente.getText(), telefonoCliente.getText(), emailCliente.getText());
+        ArrayList<Integer> listaIndex = sistema.buscarCliente(nombreCliente.getText(), apellidoCliente.getText(), ciCliente.getText(), emailCliente.getText(), telefonoCliente.getText());
         for(int i = 0;i < listaIndex.size();i++) {
             lista.addElement(sistema.getCliente(listaIndex.get(i)));
         }

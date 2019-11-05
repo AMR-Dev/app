@@ -130,7 +130,7 @@ public class JFrameBuscarEmpleado extends javax.swing.JFrame {
 
     public void actualizarListaEmpleados() {
         DefaultListModel lista = new DefaultListModel();
-        ArrayList<Integer> listaIndex = sistema.buscarEmpleado(indexLocal, nombreEmpleado.getText(), apellidoEmpleado.getText(), ciEmpleado.getText(), telefonoEmpleado.getText(), emailEmpleado.getText());
+        ArrayList<Integer> listaIndex = sistema.buscarEmpleado(indexLocal, nombreEmpleado.getText(), apellidoEmpleado.getText(), ciEmpleado.getText(), emailEmpleado.getText(), telefonoEmpleado.getText());
         for(int i = 0;i < listaIndex.size();i++) {
             lista.addElement(sistema.getEmpleado(indexLocal, listaIndex.get(i)));
         }
